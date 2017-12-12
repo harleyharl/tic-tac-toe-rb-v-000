@@ -104,4 +104,4 @@ indexes = won?(board)
 end
 end
 
-def play(board)
+# def play(board)
