@@ -105,6 +105,7 @@ end
 end
 
 def play(board)
+  input = gets
   until over?(board)
    turn(board)
   end
@@ -113,8 +114,4 @@ def play(board)
   elsif draw?(board)
   puts "Cat's Game!"
   end
-end
-
-def play(board)
-  input = gets
 end
