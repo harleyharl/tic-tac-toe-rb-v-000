@@ -104,4 +104,13 @@ indexes = won?(board)
 end
 end
 
-# def play(board)
+def play(board)
+  until over?(board)
+   turn(board)
+  end 
+  if won?(board)
+  puts "Congrats on winning, #{winner(board)}!"
+  elsif draw?(board)
+  puts "The game is a draw"   
+  end 
+end 
