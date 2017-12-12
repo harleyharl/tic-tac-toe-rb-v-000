@@ -39,9 +39,12 @@ def valid_move?(board, index)
   !position_taken?(board, index)
   end
 end
-
-def move(display_board, converted_input, value)
-  display_board[converted_input] = "#{value}"
+#
+# def move(display_board, converted_input, value)
+#   display_board[converted_input] = "#{value}"
+# end
+def move(board, index, player = "X")
+  board[index] = player
 end
 
 def turn(board)
