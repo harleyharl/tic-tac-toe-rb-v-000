@@ -37,15 +37,13 @@ def valid_move?(board, index)
   if index.to_i.between?(0, 9)
     true
   !position_taken?(board, index)
-    else 
-    false
   end
 end
 #
 # def move(display_board, converted_input, value)
 #   display_board[converted_input] = "#{value}"
 # end
-def move(board, index, player = "X")
+def move(board, index, player)
   board[index] = player
 end
 
